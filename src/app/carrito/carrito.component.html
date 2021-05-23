@@ -1,0 +1,19 @@
+ <table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Clase</th>
+            <th>Modelo</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="items" *ngFor="let item of carrito ">
+            <td>{{item.nombre}} </td>
+            <td>{{item.clase}}</td>
+            <td>{{item.modelo}}</td>
+            <td>{{item.precio}}</td>
+        </tr>
+        
+    </tbody>
+</table>
