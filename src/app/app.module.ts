@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ItemsListComponent } from './items-list/items-list.component';
 import { NavComponent } from './nav/nav.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CarritoComponent } from './carrito/carrito.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
