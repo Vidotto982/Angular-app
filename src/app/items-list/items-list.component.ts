@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Item } from './Item';
 
 @Component({
   selector: 'app-items-list',
@@ -7,17 +8,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemsListComponent implements OnInit {
 
-  items = [{
+  items : Item []= [{
     nombre: 'Rueda algo',
     clase: 'Epic',
     modelo: 'Torino',
     precio: 42,
+    oferta: true,
   },
   {
     nombre: 'Chasis algo',
     clase: 'Mistic',
     modelo: 'BMW',
     precio: 77,
+    oferta: false,
+
+  },
+  {
+    nombre: 'Ruedas',
+    clase: 'Legend',
+    modelo: 'Ferrari',
+    precio: 42,
+    oferta: true,
+
+  },
+  {
+    nombre: 'Chasis algo',
+    clase: 'Mistic',
+    modelo: 'BMW',
+    precio: 77,
+    oferta: false,
+
   }
   ]
 
