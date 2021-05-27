@@ -1,3 +1,4 @@
+import { RocketHomeComponent } from './rocket-home/rocket-home.component';
 import { RocketAboutComponent } from './rocket-about/rocket-about.component';
 import { ItemsListComponent } from './items-list/items-list.component';
 import { NgModule } from '@angular/core';
@@ -6,11 +7,11 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path:'',
-    component: ItemsListComponent
+    component: RocketHomeComponent
   },
   {
     path: 'home',
-    component: ItemsListComponent
+    component: RocketHomeComponent
 
   }, {
     path: 'about',

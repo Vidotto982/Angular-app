@@ -1,10 +1,17 @@
 
-
- span{
+tr{
+   vertical-align: middle;
+}
+span{
     margin: 5px;
     background-color: rgb(205, 202, 50) ;
  }
-.oferta{
-        background-color: rgb(238, 108, 134);
-    }
+td{
+      background-color: rgb(192, 202, 96);
+      padding: 0px;
 
+   }
+   .boton-comprar{
+      vertical-align: middle;
+
+   }

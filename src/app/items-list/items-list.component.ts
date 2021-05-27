@@ -13,52 +13,48 @@ export class ItemsListComponent implements OnInit {
     clase: 'Epic',
     modelo: 'Torino',
     precio: 42,
-    oferta: true,
-    cantidad: 0,
-    stock: 10,
-    image: 'assets/img/skin.jpg',
-  },
-  {
-    nombre: 'Chasis algo',
-    clase: 'Mistic',
-    modelo: 'BMW',
-    precio: 77,
     oferta: false,
-    cantidad: 4,
-    stock: 0,
+    cantidad: 0,
+    stock: 9,
     image: 'assets/img/skin.jpg',
-
   },
   {
-    nombre: 'Auto',
-    clase: 'Legend',
-    modelo: 'Ferrari',
+    nombre: 'Rueda algo',
+    clase: 'Epic',
+    modelo: 'Torino',
+    precio: 42,
+    oferta: false,
+    cantidad: 0,
+    stock: 2,
+    image: 'assets/img/skin.jpg',
+  },
+  {
+    nombre: 'Rueda algo',
+    clase: 'Epic',
+    modelo: 'Torino',
+    precio: 42,
+    oferta: false,
+    cantidad: 0,
+    stock: 7,
+    image: 'assets/img/skin.jpg',
+  },
+  {
+    nombre: 'Rueda algo',
+    clase: 'Epic',
+    modelo: 'Torino',
     precio: 42,
     oferta: true,
     cantidad: 0,
-    stock: 0,
-    image: 'assets/img/skin.jpg',
-
-  },
-  {
-    nombre: 'Chasis algo',
-    clase: 'Mistic',
-    modelo: 'BMW',
-    precio: 77,
-    oferta: false,
-    cantidad: 0,
     stock: 5,
     image: 'assets/img/skin.jpg',
-  }
+  },
   ]
-
-
   constructor() { }
 
   ngOnInit(): void {
   }
-  maxCantidad(m: String){
-    alert(m); 
+  maxCantidad(m: String) {
+    alert(m);
   }
 
 

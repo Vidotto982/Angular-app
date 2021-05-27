@@ -1,5 +1,19 @@
-td, th{
-text-align: center;
-padding: 5px;
-margin: 5px;
+
+tr{
+    vertical-align: middle;
 }
+span{
+     margin: 5px;
+     background-color: rgb(205, 202, 50) ;
+  }
+.oferta{
+       background-color: rgb(238, 108, 134);
+     }
+ 
+.precio-total{
+    background-color: rgb(119, 241, 200);
+}
+td{
+    background-color: rgb(192, 202, 96);
+ 
+ }

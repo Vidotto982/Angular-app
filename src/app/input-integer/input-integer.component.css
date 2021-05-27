@@ -12,4 +12,10 @@ margin: 0;
 }
 input{
     max-width: 40px;
+    text-align: center;
+    width:  auto;
+}
+.boton-derecho{
+    margin-right: 4px;
+
 }
