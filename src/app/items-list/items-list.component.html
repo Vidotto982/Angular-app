@@ -21,12 +21,11 @@
             <td>{{item.precio | currency}}</td>
             <td>{{item.stock}}</td> 
             <td *ngIf ="item.stock == 0"><span>Sin Stock!</span> </td> 
-
             <td>
                 <app-input-integer [(cantidad)]="item.cantidad" [max]="item.stock" (maxCantidad)="maxCantidad($event)"
-                    *ngIf="item.stock"></app-input-integer>
+                *ngIf="item.stock" ></app-input-integer>
             </td>
-          <td> <button *ngIf="item.stock>0" class=" btn-primary btn-sm boton-comprar">Agregar al carrito</button></td> 
+          <td> <button *ngIf="item.stock>0" class="btn-primary btn-sm boton-comprar" (click)="agregarAlCarrito(item)">Agregar al carrito</button></td> 
         </tr>
     </tbody>
 </table>

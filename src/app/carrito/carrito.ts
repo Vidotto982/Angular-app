@@ -4,5 +4,6 @@ export interface carrito {
     modelo: string;
     precio: number;
     oferta: boolean;
+    cantidad: number;
     image: string;
 }

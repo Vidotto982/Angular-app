@@ -8,7 +8,6 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./input-integer.component.css']
 })
 export class InputIntegerComponent implements OnInit {
-
   constructor() { }
     @Input()
     cantidad : number;
@@ -27,6 +26,7 @@ export class InputIntegerComponent implements OnInit {
     this.cantidad++;
     this.cantidadChange.emit(this.cantidad);
     }
+
     else{
         this.maxCantidad.emit("Se alcanzo el maximo");
     }
