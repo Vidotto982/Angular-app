@@ -24,7 +24,7 @@ export class ItemsListComponent implements OnInit {
     modelo: 'BMW',
     precio: 77,
     oferta: false,
-    cantidad: 0,
+    cantidad: 4,
     stock: 0,
     image: 'assets/img/skin.jpg',
 
@@ -57,25 +57,9 @@ export class ItemsListComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-
-  upCantidad(items: Item): void {
-    if (items.cantidad < items.stock)
-      items.cantidad++;
-
+  maxCantidad(m: String){
+    alert(m); 
   }
-  downCantidad(items: Item): void {
-    if (items.cantidad > 0) {
-      items.cantidad--;
-    }
 
-  }
-  cambiarCantidad(event, items: Item): void {
-    if (items.cantidad >= items.stock)
-    items.cantidad = items.stock;
-    if (items.cantidad < 0)
-     items.cantidad = 0;
-      
-}
 
 }

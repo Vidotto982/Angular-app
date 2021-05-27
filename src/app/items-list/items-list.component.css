@@ -1,14 +1,10 @@
-td, th{
-    text-align: center;
-    padding: 5px;
+
+
+ span{
     margin: 5px;
-    }
-    .oferta{
+    background-color: rgb(205, 202, 50) ;
+ }
+.oferta{
         background-color: rgb(238, 108, 134);
     }
-    
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
--webkit-appearance: none;
-margin: 0;
-}
+

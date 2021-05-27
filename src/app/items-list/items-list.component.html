@@ -1,28 +1,25 @@
 <table>
     <thead>
-        <tr class= "table text-center">
+        <tr class="table text-center">
             <th>Nombre</th>
             <th>Clase</th>
             <th>Modelo</th>
             <th>Auto</th>
             <th>Precio</th>
-            <th>Cantidad</th>
+            <th>Stock</th>
             <th>Compra aqui</th>
         </tr>
     </thead>
     <tbody>
-        <tr class="items" *ngFor="let item of items" [ngClass]="{'oferta':item.oferta } ">
-            <td><img width="100" class="img-thumnbail" 
-            [src]="item.image" [alt]="item.nombre"></td>
-            <td>{{item.nombre}} </td>
-            <td>{{item.clase}}</td>
-            <td>{{item.modelo}}</td>
-            <td>{{item.precio | currency}}</td>
-            <td>
-                <button class="btn btn-primary btn-sm" (click)="upCantidad(item)">+</button>
-                <input type="number" [(ngModel)]="item.cantidad" (keyup)="cambiarCantidad(event, item)">
-                <button class="btn btn-primary btn-sm" (click)="downCantidad(item)">-</button>
-            </td>
-        </tr>
+            <tr class="items" *ngFor="let item of items" [ngClass]="{'oferta':item.oferta } ">
+                <td><img width="100" class="img-thumnbail" [src]="item.image" [alt]="item.nombre"></td>
+                <td>{{item.nombre}} </td>
+                <td>{{item.clase}}</td>
+                <td>{{item.modelo}}</td>
+                <td>{{item.precio | currency}}</td>
+                <td *ngIf= "item.stock==0"><span> Sin Stock</span></td>
+                <td>{{item.stock}} </td>
+                <app-input-integer [(cantidad)]="item.cantidad" [max]="item.stock" (maxCantidad)="maxCantidad($event)" *ngIf="item.stock" ></app-input-integer>
+            </tr>
     </tbody>
 </table>

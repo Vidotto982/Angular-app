@@ -3,11 +3,11 @@ footer{
     background-color: rgb(191, 122, 255);
 }
 .container{
-    background-color: rgb(75, 146, 5);
+    background-color: rgb(97, 133, 64);
     text-align: center;
     padding: 0px;
 }
-td{
+td, span{
   vertical-align: middle;  
 }
 input{

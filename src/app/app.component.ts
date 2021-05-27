@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  footer = 'VidottoApp 2021';
+  footer = 'Created by Francico Vidoto-2021';
 }
