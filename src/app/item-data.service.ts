@@ -14,9 +14,8 @@ export class ItemDataService {
 
 
   public getAll(): Observable<Item[]> {
-    tap((items: Item[])=> items.forEach(items => items.cantidad = 0))        
-    return this.http.get<Item[]>(URL); // se puede cambiar dependiendo de que se quiera hacer, sea post, put o deleate
-        ;//<- nos permite modificar el observable ANTES de pasarlo al component          
+    return this.http.get<Item[]>(URL).pipe(tap((items: Item[])=> items.forEach(items => items.cantidad = 0))); // se puede cambiar dependiendo de que se quiera hacer, sea post, put o deleate
+        //<- nos permite modificar el observable ANTES de pasarlo al component          
   
 }
 }
