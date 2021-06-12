@@ -40,11 +40,11 @@ export class InputIntegerComponent implements OnInit {
 
   }
   cambiarCantidad(): void {
-    if (this.cantidad >= this.max)
+    if (this.cantidad > this.max)
     this.cantidad = this.max;
-    if (this.cantidad < 0)
+    else if (this.cantidad < 0)
     this.cantidad = 0;
-      
+    else this.cantidadChange.emit(this.cantidad)
 }
 
 }
