@@ -22,6 +22,9 @@ export class ItemsCarritoService {
     console.log(this._listaCarrito)
 
   }
+  getListaCarrito ():BehaviorSubject <Item[]>{
+    return this.listaCarrito;
+  }
 
   constructor() { }
 }

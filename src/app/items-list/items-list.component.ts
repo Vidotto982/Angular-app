@@ -10,7 +10,7 @@ import { Item } from './Item';
   styleUrls: ['./items-list.component.css']
 })
 export class ItemsListComponent implements OnInit {
-  [x: string]: any;
+  //[x: string]: any;
 
   items: Item[] = [
     {
@@ -59,7 +59,7 @@ export class ItemsListComponent implements OnInit {
     private itemsDataService: ItemDataService,) { }// se debe agregar el inject del modulo -> private: itemsDataService: ItemDataService,
 
   ngOnInit(): void {
-  //this.itemsDataService.getAll()//// llama  a la funcion getAll de item-data-service.ts
+ // this.itemsDataService.getAll()//// llama  a la funcion getAll de item-data-service.ts
  //.subscribe(items => this.items = items); //Se tiene que subscribir ya que el data nos trae un observable desde la Api consumida
  
   }

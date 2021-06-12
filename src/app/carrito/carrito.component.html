@@ -12,7 +12,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr class="items" *ngFor="let item of (listaCarrito$ | async)">
+        <tr class="items" *ngFor="let item of (listaCarrito | async)">
             <td><img width="100" class="img-thumnbail" [src]="item.image" [alt]="item.nombre"></td>
             <td>{{item.nombre}} </td>
             <td>{{item.clase}}</td>
